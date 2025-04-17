@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+.navbar {
+  margin-top: 1vh;
+  width: 80vw;
+  margin-left: -8vw;
+  background: #ffffff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 1rem 2rem;
+  animation: fadeIn 0.8s ease-in-out;
+  border-radius: 18px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.navbar-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-logo a {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: #000;
+  letter-spacing: 1px;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin-left: 1.5rem;
+}
+
+.nav-links {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  transition: background 0.3s ease, transform 0.3s ease, color 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  background-color: #fff;
+}
+
+.nav-links:hover {
+  background: linear-gradient(135deg, #000, #434343);
+  color: #fff;
+}
+
+.nav-links.active {
+  background: linear-gradient(135deg, #000, #434343);
+  color: #fff;
+}
